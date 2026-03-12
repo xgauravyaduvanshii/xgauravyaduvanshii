@@ -25,7 +25,7 @@ jobs:
           for i in {1..600}; do
             # Bypassing the komarev caching by spoofing a random IP address every single request
             spoof_ip="$((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256))"
-            curl -s -o /dev/null -H "X-Forwarded-For: $spoof_ip" "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
+            curl -s -o /dev/null -H "X-Forwarded-For: $spoof_ip" "https://camo.githubusercontent.com/0fc490f2810aefd7d9141709f2bb68d23469bbbd84c949d71ff9ee00c24b30a1/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d786761757261767961647576616e7368696926636f6c6f723d303066326665267374796c653d666f722d7468652d6261646765266c6162656c3d50524f46494c452b5649455753"
             sleep 1
           done
           
