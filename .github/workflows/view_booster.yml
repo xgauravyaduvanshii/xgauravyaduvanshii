@@ -1,23 +1,30 @@
-name: Profile View Booster
+name: Continuous Profile View Booster
 
 on:
   schedule:
-    # Runs every 5 minutes (GitHub Actions minimum practical cron schedule is roughly 5 mins, even if set to 1 min it often delays)
+    # Trigger as fast as GitHub allows (effectively every 5 minutes)
     - cron: '*/5 * * * *'
-  workflow_dispatch: # Allows manual triggering from the Actions tab
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches:
+      - main
 
 jobs:
   boost-views:
     runs-on: ubuntu-latest
     steps:
-      - name: Boost views by hitting the counter
+      - name: Boost views by hitting the counter non-stop
         run: |
-          echo "Starting the View Booster..."
-          # Loop to add 20 views every time this runs (plus GitHub's caching bypass trick)
-          for i in {1..20}; do
-            # We append a random timestamp query parameter to bypass potential GitHub camouflaging/caching
-            curl -s -o /dev/null -w "%{http_code}\n" "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
-            # Small delay to prevent too rapid spamming
+          echo "Starting the Continuous View Booster..."
+          
+          # By looping 600 times with a 1-second sleep, this script runs for 10 minutes straight.
+          # Since the cron triggers every 5 minutes, you will ALWAYS have 1 or 2 of these running 
+          # at the same time, 24/7, without ever stopping. 
+          # It generates a hit every single second.
+          
+          for i in {1..600}; do
+            curl -s -o /dev/null "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
             sleep 1
           done
-          echo "Successfully boosted views!"
+          
+          echo "Successfully boosted views non-stop! Next runner is already handling the next batch."
