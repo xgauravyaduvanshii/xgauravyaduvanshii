@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 150" width="450" height="150">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818"/>
+            <stop offset="100%" stop-color="#282828"/>
+        </linearGradient>
+
+        <clipPath id="album-clip">
+            <rect x="20" y="25" width="100" height="100" rx="10"/>
+        </clipPath>
+
+        <style>
+            .text {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                fill: #FFFFFF;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .artist {
+                font-size: 14px;
+                fill: #B3B3B3;
+                font-weight: 500;
+            }
+            .playlist {
+                font-size: 11px;
+                fill: #B3B3B3;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            
+            /* Equalizer Animation */
+            .bar {
+                fill: #1DB954;
+                transform-origin: bottom;
+            }
+            .b1 { animation: eq 1.2s ease-in-out infinite alternate; animation-delay: 0.1s; }
+            .b2 { animation: eq 1.5s ease-in-out infinite alternate; animation-delay: 0.3s; }
+            .b3 { animation: eq 1.1s ease-in-out infinite alternate; animation-delay: 0.5s; }
+            .b4 { animation: eq 1.4s ease-in-out infinite alternate; animation-delay: 0.2s; }
+            .b5 { animation: eq 1.3s ease-in-out infinite alternate; animation-delay: 0.4s; }
+
+            @keyframes eq {
+                0% { transform: scaleY(0.1); }
+                100% { transform: scaleY(1); }
+            }
+
+            /* Progress Bar Animation */
+            .progress {
+                animation: fillBar 150s linear infinite;
+            }
+            @keyframes fillBar {
+                0% { width: 0; }
+                100% { width: 280px; }
+            }
+            
+            /* Disc spin */
+            .spin {
+                animation: spin 6s linear infinite;
+                transform-origin: 70px 75px;
+            }
+            @keyframes spin {
+                100% { transform: rotate(360deg); }
+            }
+
+            /* Marquee */
+            .marquee-wrapper {
+                animation: move 10s linear infinite;
+            }
+            @keyframes move {
+                0% { transform: translateX(0); }
+                40% { transform: translateX(0); }
+                80% { transform: translateX(-50px); }
+                100% { transform: translateX(0); }
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect x="0" y="0" width="450" height="150" rx="15" fill="url(#bg)" />
+
+    <!-- Album Art Placeholder / Spinning Vinyl -->
+    <g class="spin">
+        <circle cx="70" cy="75" r="45" fill="#111" />
+        <circle cx="70" cy="75" r="45" fill="none" stroke="#222" stroke-width="2" />
+        <circle cx="70" cy="75" r="35" fill="none" stroke="#222" stroke-width="1" />
+        <circle cx="70" cy="75" r="25" fill="none" stroke="#222" stroke-width="1" />
+        <circle cx="70" cy="75" r="15" fill="#1DB954" />
+        <circle cx="70" cy="75" r="4" fill="#181818" />
+    </g>
+
+    <!-- Spotify Logo (small) -->
+    <g transform="translate(135, 25) scale(0.04)" fill="#1DB954">
+        <path d="M239.1 11.2C107.1 11.2 0 118.3 0 250.3C0 382.3 107.1 489.4 239.1 489.4C371.1 489.4 478.2 382.3 478.2 250.3C478.2 118.3 371.1 11.2 239.1 11.2ZM347.1 354.4C342.9 361.3 333.6 363.4 326.7 359.2C271.3 325.4 200.7 317.2 117.8 336.1C110 337.8 102.3 332.9 100.5 325.1C98.8 317.3 103.7 309.6 111.5 307.8C201.7 287.1 280 296.2 341.3 333.8C348.2 338 350.3 347.3 347.1 354.4ZM376.6 288C371 296.9 359.1 299.7 350.1 294.1C286.3 255.1 189 243 113.3 266C103.1 269 92.4 263.2 89.3 253.1C86.3 242.9 92.1 232.2 102.2 229.1C188.5 202.9 296 216.7 368.6 261.3C377.6 266.9 380.5 278.9 376.6 288ZM380.4 216C305.6 171.6 177.5 167.3 103.4 189.8C90.9 193.6 77.6 186.7 73.8 174.2C70 161.7 76.9 148.4 89.4 144.6C174.7 118.7 316.6 123.7 402.7 188C413.7 196.3 415.8 211.8 407.5 222.8C399.2 233.8 383.7 235.9 372.7 227.6C375.4 223.7 377.9 219.9 380.4 216Z"/>
+    </g>
+    <text x="160" y="37" class="text playlist">PLAYING FROM GROOVICART</text>
+
+    <!-- Title and Artist (with some extra width for potential animated marquee later if needed) -->
+    <svg x="135" y="55" width="220" height="40">
+        <g class="marquee-wrapper">
+            <text x="0" y="16" class="text title">Midnight City - Groovicart Mix</text>
+        </g>
+        <text x="0" y="36" class="text artist">M83, Gaurav's Favorite</text>
+    </svg>
+
+    <!-- Equalizer -->
+    <g transform="translate(400, 75) rotate(180)">
+        <rect x="0" y="0" width="3" height="20" rx="1" class="bar b1"/>
+        <rect x="5" y="0" width="3" height="20" rx="1" class="bar b2"/>
+        <rect x="10" y="0" width="3" height="20" rx="1" class="bar b3"/>
+        <rect x="15" y="0" width="3" height="20" rx="1" class="bar b4"/>
+        <rect x="20" y="0" width="3" height="20" rx="1" class="bar b5"/>
+    </g>
+
+    <!-- Progress Bar -->
+    <rect x="135" y="105" width="280" height="4" rx="2" fill="#535353" />
+    <rect x="135" y="105" width="10" height="4" rx="2" fill="#1DB954" class="progress" />
+    
+    <!-- Controls (Previous, Play, Next) -->
+    <g fill="#B3B3B3" transform="translate(255, 125) scale(0.6)">
+        <path d="M -25 -5 L -10 5 L -10 -15 Z"/>
+        <rect x="-27" y="-15" width="3" height="20" />
+        
+        <circle cx="10" cy="-5" r="16" fill="#1DB954" />
+        <path d="M 5 -12 L 17 -5 L 5 2 Z" fill="#181818" />
+        
+        <path d="M 45 -5 L 30 5 L 30 -15 Z"/>
+        <rect x="47" y="-15" width="3" height="20" />
+    </g>
+    
+    <text x="135" y="123" class="text" style="font-size: 10px; fill: #B3B3B3; font-variant-numeric: tabular-nums;">1:42</text>
+    <text x="390" y="123" class="text" style="font-size: 10px; fill: #B3B3B3; font-variant-numeric: tabular-nums;">4:03</text>
+</svg>

@@ -1,0 +1,23 @@
+name: Profile View Booster
+
+on:
+  schedule:
+    # Runs every 5 minutes (GitHub Actions minimum practical cron schedule is roughly 5 mins, even if set to 1 min it often delays)
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  boost-views:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Boost views by hitting the counter
+        run: |
+          echo "Starting the View Booster..."
+          # Loop to add 20 views every time this runs (plus GitHub's caching bypass trick)
+          for i in {1..20}; do
+            # We append a random timestamp query parameter to bypass potential GitHub camouflaging/caching
+            curl -s -o /dev/null -w "%{http_code}\n" "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
+            # Small delay to prevent too rapid spamming
+            sleep 1
+          done
+          echo "Successfully boosted views!"
