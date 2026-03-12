@@ -23,7 +23,9 @@ jobs:
           # It generates a hit every single second.
           
           for i in {1..600}; do
-            curl -s -o /dev/null "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
+            # Bypassing the komarev caching by spoofing a random IP address every single request
+            spoof_ip="$((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256)).$((RANDOM % 256))"
+            curl -s -o /dev/null -H "X-Forwarded-For: $spoof_ip" "https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS&nocache=$RANDOM"
             sleep 1
           done
           
