@@ -1,64 +1,14 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Header" />
+  <img src="./assets/Neon Red Developer Portfolio Banner 1.svg" width="100%" alt="Header" />
 </div>
-
-<h3 align="center">
-    🚀 Turning caffeine into code | 🎵 Always vibing | 🌟 Open Source Explorer
-</h3>
-
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&center=true&vCenter=true&width=435&lines=Full+Stack+Developer+%F0%9F%92%BB;Welcome+to+my+creative+space+%E2%9C%A8;Building+Awesome+Web+Apps+%F0%9F%9A%80;CEO+of+FlyingDarkDev+%F0%9F%91%91" alt="Typing SVG" />
+  <img src="./assets/Gaurav Yadav’s Neon Urmate Learning OS 1.svg" width="100%" alt="Header" />
 </div>
-
-<br>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=xgauravyaduvanshii&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-</div>
-
----
-
-### 🎧 My Coding Soundtrack
-
-<div align="center">
-  <a href="https://blacky.groovicart.com/" target="_blank" title="Click to listen!">
-    <img src="./assets/spotify-player.svg" width="450" alt="Spotify Animated Player" />
-  </a>
-</div>
-
----
-
-### 👨‍💻 About Me
-
-- 🏢 **Role:** CEO & Founder of **FlyingDarkDev**
-- 🔭 **Currently working on:** Exciting open-source projects and web applications.
-- 🌱 **Currently learning:** Advanced System Design, Web3, and cool new frameworks.
-- 👯 **Looking to collaborate on:** Innovative and impactful open-source tools.
-- 📫 **How to reach me:** Shoot me an email at xgauravyaduvanshii@gmail.com
-- ⚡ **Fun fact:** I can debug code in my sleep. (Okay, maybe just dreaming of syntax errors!)
-
----
-
-### 🛠️ Languages and Tools
-
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,mongodb,postgresql,git,github,docker,aws,figma&perline=8" />
+    <img src="./assets/Tech Stack & Tools Neon Banner 1.svg" />
   </a>
 </div>
-
-<br>
-
-<div align="center">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-</div>
-
----
 
 ### 🌟 Featured Open Source Projects
 
