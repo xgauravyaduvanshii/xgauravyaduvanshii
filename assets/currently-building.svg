@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270">
+<defs><linearGradient id="b" x2="1"><stop stop-color="#09090c"/><stop offset="1" stop-color="#21060b"/></linearGradient></defs>
+<rect width="1200" height="270" rx="22" fill="url(#b)" stroke="#6d1a2a"/>
+<text x="36" y="48" fill="#ff5367" font-family="Arial" font-size="13" font-weight="700" letter-spacing="4">02 / CURRENTLY BUILDING</text>
+<g font-family="Arial">
+ <rect x="36" y="76" width="350" height="150" rx="14" fill="#100d11" stroke="#a31d34"/><text x="58" y="111" fill="#ff5367" font-size="12" font-weight="700" letter-spacing="2">01 / URMATE</text><text x="58" y="148" fill="#fff" font-size="25" font-weight="800">AI workspace</text><text x="58" y="180" fill="#b7a9ae" font-size="14">AI tools and intelligent workflows</text><text x="58" y="207" fill="#ff7785" font-size="13">urmate.tech ↗</text>
+ <rect x="425" y="76" width="350" height="150" rx="14" fill="#100d11" stroke="#a31d34"/><text x="447" y="111" fill="#ff5367" font-size="12" font-weight="700" letter-spacing="2">02 / FLYINGDARKDEV</text><text x="447" y="148" fill="#fff" font-size="25" font-weight="800">Dev ecosystem</text><text x="447" y="180" fill="#b7a9ae" font-size="14">Experiments, products and tools</text><text x="447" y="207" fill="#ff7785" font-size="13">flyingdarkdev.com ↗</text>
+ <rect x="814" y="76" width="350" height="150" rx="14" fill="#100d11" stroke="#a31d34"/><text x="836" y="111" fill="#ff5367" font-size="12" font-weight="700" letter-spacing="2">03 / EXPLORING</text><text x="836" y="148" fill="#fff" font-size="25" font-weight="800">AI + real-time</text><text x="836" y="180" fill="#b7a9ae" font-size="14">Agents, voice and multimodal UX</text><text x="836" y="207" fill="#ff7785" font-size="13">Always experimenting ↗</text>
+</g></svg>

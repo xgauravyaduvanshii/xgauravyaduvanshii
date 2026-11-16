@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050506"/><stop offset=".55" stop-color="#130507"/><stop offset="1" stop-color="#260609"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ff2638" stop-opacity=".48"/><stop offset="1" stop-color="#ff2638" stop-opacity="0"/></radialGradient>
+ <linearGradient id="red" x2="1" y2="1"><stop stop-color="#ff6874"/><stop offset=".45" stop-color="#ff2338"/><stop offset="1" stop-color="#8c0014"/></linearGradient>
+ <linearGradient id="hood" x2="1" y2="1"><stop stop-color="#29252a"/><stop offset=".5" stop-color="#111014"/><stop offset="1" stop-color="#050506"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+ <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#ff3448" stroke-opacity=".09" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+<circle cx="910" cy="230" r="260" fill="url(#glow)"/>
+<circle cx="910" cy="230" r="145" fill="none" stroke="#ff2638" stroke-opacity=".2" stroke-width="1"/>
+<circle cx="910" cy="230" r="190" fill="none" stroke="#ff2638" stroke-opacity=".12" stroke-width="1" stroke-dasharray="3 12"/>
+<path d="M0 410 C250 340 380 500 650 420 S1010 360 1200 430" fill="none" stroke="#ff2638" stroke-opacity=".28" stroke-width="2"/>
+<path d="M0 435 C250 365 420 520 690 445 S1000 400 1200 455" fill="none" stroke="#ff2638" stroke-opacity=".13" stroke-width="1"/>
+<!-- floating terminal -->
+<g transform="translate(720 72)" opacity=".78">
+ <rect width="300" height="156" rx="13" fill="#09090c" stroke="#ff3347" stroke-opacity=".5"/>
+ <path d="M0 36H300" stroke="#ff3347" stroke-opacity=".28"/>
+ <circle cx="19" cy="18" r="4" fill="#ff3b50"/><circle cx="34" cy="18" r="4" fill="#8e2632"/><circle cx="49" cy="18" r="4" fill="#53232a"/>
+ <g font-family="monospace" font-size="12"><text x="18" y="62" fill="#ff6878">$</text><text x="32" y="62" fill="#d7cbd0"> building the future...</text><text x="18" y="88" fill="#ff6878">const</text><text x="62" y="88" fill="#f2e8eb"> vision = "limitless";</text><text x="18" y="114" fill="#ff6878">deploy</text><text x="68" y="114" fill="#f2e8eb"> (vision);</text><text x="18" y="140" fill="#7bffb2">✓ ready to create</text></g>
+</g>
+<!-- hooded coder silhouette, seated -->
+<g transform="translate(775 180)">
+ <ellipse cx="195" cy="285" rx="180" ry="18" fill="#000" opacity=".65" filter="url(#soft)"/>
+ <!-- hoodie torso -->
+ <path d="M88 170 Q103 118 161 110 L225 110 Q292 122 316 180 L355 310 L42 310Z" fill="url(#hood)" stroke="#ff3448" stroke-opacity=".38" stroke-width="2"/>
+ <path d="M113 153 Q195 192 277 151" fill="none" stroke="#ff3448" stroke-opacity=".25" stroke-width="2"/>
+ <!-- hood -->
+ <path d="M113 117 Q105 8 195 0 Q287 8 278 117 Q265 157 195 166 Q125 157 113 117Z" fill="url(#hood)" stroke="#ff3448" stroke-opacity=".62" stroke-width="3"/>
+ <path d="M132 107 Q136 32 195 27 Q254 32 259 107 Q236 143 195 144 Q154 143 132 107Z" fill="#050507"/>
+ <!-- face shadow -->
+ <path d="M150 90 Q195 66 240 90 L230 125 Q195 147 160 125Z" fill="#0b090c"/>
+ <path d="M158 105 Q195 91 232 105" stroke="#ff2638" stroke-opacity=".72" stroke-width="3" fill="none" filter="url(#soft)"/>
+ <!-- arm -->
+ <path d="M83 185 Q35 205 45 258 L127 278 L158 229Z" fill="#171419" stroke="#ff3448" stroke-opacity=".25"/>
+ <path d="M292 182 Q344 205 340 253 L272 275 L244 226Z" fill="#171419" stroke="#ff3448" stroke-opacity=".25"/>
+ <!-- laptop -->
+ <path d="M86 228 L306 228 L333 292 L62 292Z" fill="#090a0d" stroke="#ff3a4f" stroke-width="2"/>
+ <path d="M62 292 L333 292 L350 307 L45 307Z" fill="#242026" stroke="#ff3a4f" stroke-opacity=".65"/>
+ <rect x="105" y="238" width="182" height="43" rx="4" fill="#14070b"/>
+ <path d="M120 250H178 M120 261H204 M120 272H163" stroke="#ff465a" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+ <path d="M195 238V281" stroke="#ff465a" stroke-opacity=".18"/>
+ <!-- red edge light -->
+ <path d="M277 27 Q310 72 279 117 M105 117 Q82 68 116 26" fill="none" stroke="#ff2638" stroke-width="3" opacity=".75" filter="url(#soft)"/>
+</g>
+<!-- typography -->
+<g font-family="Arial, Helvetica, sans-serif">
+ <text x="72" y="105" fill="#ff4356" font-size="15" font-weight="700" letter-spacing="5">FLYINGDARKDEV / 001</text>
+ <text x="68" y="194" fill="#fff" font-size="56" font-weight="800" letter-spacing="-1">GAURAV</text>
+ <text x="68" y="252" fill="url(#red)" font-size="56" font-weight="800" letter-spacing="-1">YADUVANSHII</text>
+ <rect x="72" y="280" width="66" height="4" rx="2" fill="#ff3048"/>
+ <text x="72" y="326" fill="#f5e9ec" font-size="19" font-weight="700" letter-spacing="2">FULL STACK DEVELOPER</text>
+ <text x="72" y="357" fill="#a99ba0" font-size="16" letter-spacing="2">ANDROID  •  AI  •  PRODUCT BUILDER</text>
+ <text x="72" y="420" fill="#ff6574" font-size="14" font-family="monospace">BUILD. CREATE. REPEAT.</text>
+ <text x="72" y="457" fill="#766970" font-size="12" letter-spacing="3">INDIA  /  FLYINGDARKDEV</text>
+</g>
+<path d="M72 476H1128" stroke="#ff3048" stroke-opacity=".35"/>
+<text x="1127" y="499" text-anchor="end" fill="#8f747b" font-family="monospace" font-size="10">DARK MODE // RED SIGNAL ACTIVE</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#09090c"/><stop offset="1" stop-color="#1a0509"/></linearGradient><linearGradient id="r"><stop stop-color="#ff596b"/><stop offset="1" stop-color="#a90020"/></linearGradient><filter id="g"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="1200" height="370" rx="24" fill="url(#b)" stroke="#5e1723"/>
+<circle cx="1080" cy="40" r="170" fill="#d20d2b" opacity=".12" filter="url(#g)"/>
+<text x="42" y="55" fill="#ff5367" font-family="Arial" font-size="14" font-weight="700" letter-spacing="4">01 / ABOUT THE DEVELOPER</text>
+<text x="42" y="105" fill="#fff" font-family="Arial" font-size="32" font-weight="800">Curiosity turned into code.</text>
+<text x="42" y="145" fill="#c9bfc3" font-family="Arial" font-size="17">I'm Gaurav — a full-stack and Android developer exploring the edge of AI.</text>
+<text x="42" y="174" fill="#c9bfc3" font-family="Arial" font-size="17">I love building complete products: thoughtful interfaces, scalable backends,</text>
+<text x="42" y="203" fill="#c9bfc3" font-family="Arial" font-size="17">real-time experiences, and tools that make ambitious ideas usable.</text>
+<g transform="translate(42 244)" font-family="Arial">
+ <rect width="245" height="82" rx="12" fill="#100d11" stroke="#7f1c2c"/><text x="18" y="30" fill="#ff5b6d" font-size="12" font-weight="700" letter-spacing="2">FOCUS</text><text x="18" y="58" fill="#fff" font-size="16" font-weight="700">Full Stack • Android</text>
+ <rect x="260" width="245" height="82" rx="12" fill="#100d11" stroke="#7f1c2c"/><text x="278" y="30" fill="#ff5b6d" font-size="12" font-weight="700" letter-spacing="2">EXPLORING</text><text x="278" y="58" fill="#fff" font-size="16" font-weight="700">AI • Agents • Voice</text>
+ <rect x="520" width="245" height="82" rx="12" fill="#100d11" stroke="#7f1c2c"/><text x="538" y="30" fill="#ff5b6d" font-size="12" font-weight="700" letter-spacing="2">BUILDING</text><text x="538" y="58" fill="#fff" font-size="16" font-weight="700">FlyingDarkDev</text>
+ <rect x="780" width="335" height="82" rx="12" fill="#100d11" stroke="#7f1c2c"/><text x="798" y="30" fill="#ff5b6d" font-size="12" font-weight="700" letter-spacing="2">MINDSET</text><text x="798" y="58" fill="#fff" font-size="16" font-weight="700">Learn fast. Build boldly.</text>
+</g></svg>
